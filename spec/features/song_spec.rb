@@ -44,7 +44,7 @@ describe 'form' do
     fill_in 'song[genre_id]', with: @genre.id
 
     click_on "Create Song"
-
+    buybag
     expect(page).to have_content("My song name")
   end
 
